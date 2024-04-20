@@ -1,0 +1,12 @@
+* {
+    margin: 0%;
+    /*Elimina todo margen que trae por defecto*/
+    padding: 0%;
+    /*Elimina todo relleno que trae por defecto*/
+    --font-family-sans-serif: "Nunito", sans-serif;
+    font-family: "Nunito";
+}
+
+body {
+    background-color: rgb(198, 241, 227);
+}

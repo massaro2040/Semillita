@@ -1,0 +1,146 @@
+* {
+    margin: 0%;
+    /*Elimina todo margen que trae por defecto*/
+    padding: 0%;
+    /*Elimina todo relleno que trae por defecto*/
+    --font-family-sans-serif: "Nunito", sans-serif;
+    font-family: "Nunito";
+
+}
+
+.container_nav {
+    display: block;
+    background-color: white;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: rgb(199, 113, 202)
+}
+
+nav .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+nav .logo {
+    height: 6rem;
+    margin: 1rem;
+    transition: 0.8s;
+}
+
+
+nav a p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .text-primary {
+    margin: 1rem;
+    font-size: 3rem;
+    font-weight: bold
+}
+
+nav .text-secundary {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 0.7rem;
+}
+
+.navbar .navbar_nav .item {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: rgb(105, 209, 174);
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+#actual {
+    color: rgb(199, 113, 202);
+    font-size: 2rem;
+}
+
+.navbar .navbar_nav .item:hover {
+    color: rgb(199, 113, 202);
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 800px) {
+    nav .text-primary {
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    nav .text-secundary {
+        display: flex;
+        font-size: 1rem;
+        font-weight: bold;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .logo {
+        height: 3rem;
+    }
+
+    nav p {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        justify-content: space-between;
+    }
+
+    nav .navbar_nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-weight: bold;
+        padding: 0 1rem 0 1rem;
+        justify-content: center;
+    }
+
+    .navbar .navbar_nav .item {
+        text-decoration: none;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+}

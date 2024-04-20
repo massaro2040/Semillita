@@ -1,0 +1,90 @@
+#grid_container-prop {
+    display: grid;
+    grid-template-areas:
+        "anual recreativa taller"
+        "tardes tejiendo verano";
+    gap: 1rem;
+    background-color: rgb(111, 206, 174);
+    width: 100%;
+    height: 80%;
+    padding: 2rem;
+    justify-items: center;
+
+}
+
+.grid_item-prop {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-radius: 18px;
+    max-width: 30rem;
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(38, 41, 43, 0.8);
+    margin: 2rem;
+}
+
+.img-prop {
+    border-radius: 20px;
+    width: 25rem;
+    /* padding: 0.1rem; */
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(38, 41, 43, 0.8);
+
+}
+
+.prop-text {
+    color: black;
+    text-indent: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#a-partir {
+    align-self: flex-start;
+}
+
+.prop-a {
+    text-decoration: none;
+
+}
+
+.area-prop1 {
+    grid-area: anual;
+
+}
+
+.area-prop2 {
+    grid-area: taller;
+}
+
+.area-prop3 {
+    grid-area: tardes;
+}
+
+.area-prop4 {
+    grid-area: verano;
+}
+
+.area-prop5 {
+    grid-area: tejiendo;
+}
+
+.area-prop6 {
+    grid-area: recreativa;
+}
+
+.prop-text span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.grid_item-prop:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+
+}
