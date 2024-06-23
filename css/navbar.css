@@ -14,7 +14,7 @@
     --color_primario_suave: #8527c383;
     --color_blanco: #fff;
     --altura_header: 7rem;
-    --padding_left_right: 2rem;
+    --padding_left_right: 2vw;
     --ancho_maximo: 1200px;
 }
 
@@ -38,8 +38,9 @@ ul {
 
 nav .logo {
     height: 6rem;
-    margin: 1rem;
+    /* margin: 1rem; */
     transition: 0.8s;
+    padding: 0 var(--padding_left_right);
 }
 
 .header {
@@ -55,7 +56,7 @@ nav .logo {
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-
+    padding: 0 var(--padding_left_right);
 }
 
 .text-h {
@@ -80,7 +81,7 @@ nav .logo {
     top: 8rem;
     left: 0;
     overflow: hidden;
-    transition: 0.8s;
+    transition: 0.5s;
     height: 0;
     display: flex;
     justify-content: center;
@@ -90,13 +91,58 @@ nav .logo {
     z-index: 1;
 }
 
-.li_links {}
+
 
 .link {
     font-size: 2rem;
     color: rgb(199, 113, 202);
     font-weight: bold;
 
+}
+
+@media (min-width: 801px) {
+    .label_hamburguesa {
+        display: none;
+    }
+
+    .ul_links {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 1rem;
+        background-color: white;
+
+    }
+
+    .link {
+        font-size: 1.5rem;
+    }
+
+    .links {
+        font-size: 0.1rem;
+        transition: all .3s;
+
+    }
+
+    .link:hover {
+        color: black;
+    }
+
+    .navbar {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        position: relative;
+        padding: 0 1vw;
+    }
+
+    nav .logo {
+        height: 6rem;
+        transition: 0.8s;
+    }
 }
 
 
