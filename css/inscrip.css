@@ -1,0 +1,52 @@
+* {
+    margin: 0%;
+    /*Elimina todo margen que trae por defecto*/
+    padding: 0%;
+    /*Elimina todo relleno que trae por defecto*/
+    --font-family-sans-serif: sans-serif;
+    font-family: "open sans", sans-serif;
+    box-sizing: border-box; /* Incluye el padding y el border en el tamaño total del elemento */
+}
+
+.bienvenida {
+    background-image: url("../img/b.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+    height: 50vh;
+    width: 100%;
+    margin: 0 auto;
+   
+}
+.bienvenida_article {
+     text-align: center;
+     width: 70%;
+}
+
+.bienvenida_text {
+    font-size: 1.5rem;
+    color: rgb(255 , 255, 255);
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000000;
+}
+.bienvenida_text > *{
+    padding: 1.5rem;
+}
+
+.bienvenida_text a{
+    text-decoration: none;
+    color: white;
+    background-color: #ff7f50;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.bienvenida_text a:hover{
+    background-color: #ff6347;
+    transition: 0.3s;
+}
